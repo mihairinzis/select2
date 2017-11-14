@@ -1874,7 +1874,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 queryNumber;
 
             // prevent duplicate queries against the same term
-            if (initial !== true && lastTerm && equal(term, lastTerm)) return;
+            if (initial !== true && equal(term, lastTerm)) return;
 
             $.data(this.container, "select2-last-term", term);
 
